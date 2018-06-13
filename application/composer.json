@@ -1,0 +1,10 @@
+{
+	"name": "ifubaya/ilpc",
+	"description": "ILPC Information System",
+	"type": "project",
+	"license": "proprietary",
+	"require": {
+		"php": ">=5.5",
+		"sendgrid/sendgrid": "~4.0"
+	}
+}

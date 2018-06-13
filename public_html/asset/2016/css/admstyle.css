@@ -1,0 +1,500 @@
+html,body {
+    height: 100%;
+}
+body {
+    font-family: Montserrat, sans-serif;
+//background-color: #376ba6;
+}
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -270px;
+    padding: 0 0 270px;
+}
+.wrapper-md {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn-ilpc {
+    white-space:normal;
+    color: #FFFFFF;
+    background-color: #F02B7A;
+    border-color: #F02B7A;
+    border-radius: 0px;
+    width: 100%;
+}
+
+.btn-ilpc:hover, .btn-ilpc:focus, .btn-ilpc:active, .btn-ilpc.active, .open .dropdown-toggle.btn-ilpc {
+    color: #FFFFFF;
+    background-color: #D11E65;
+    border-color: #F02B7A;
+}
+
+.btn-ilpc:active, .btn-ilpc.active, .open .dropdown-toggle.btn-ilpc {
+    background-image: none;
+}
+
+.btn-ilpc.disabled, .btn-ilpc[disabled], fieldset[disabled] .btn-ilpc,
+.btn-ilpc.disabled:hover, .btn-ilpc[disabled]:hover, fieldset[disabled] .btn-ilpc:hover,
+.btn-ilpc.disabled:focus, .btn-ilpc[disabled]:focus, fieldset[disabled] .btn-ilpc:focus,
+.btn-ilpc.disabled:active, .btn-ilpc[disabled]:active, fieldset[disabled] .btn-ilpc:active,
+.btn-ilpc.disabled.active, .btn-ilpc[disabled].active, fieldset[disabled] .btn-ilpc.active {
+    background-color: #F02B7A;
+    border-color: #F02B7A;
+}
+
+.btn-ilpc .badge {
+    color: #F02B7A;
+    background-color: #FFFFFF;
+}
+
+/* menubar style */
+.navbar-team {
+    background-color: #376ba6;
+    border-color: #376ba6;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+.navbar-team .navbar-brand {
+    color: #ffca09;
+}
+.navbar-team .navbar-brand:hover, .navbar-team .navbar-brand:focus {
+    color: #ffca09;
+}
+.navbar-team .navbar-text {
+    color: #ffca09;
+}
+.navbar-team .navbar-nav > li > a {
+    color: #ffca09;
+}
+.navbar-team .navbar-nav > li > a:hover, .navbar-team .navbar-nav > li > a:focus {
+    color: #ffca09;;
+    background-color: #458fcd;
+}
+.navbar-team .navbar-nav > li > .dropdown-menu {
+    background-color: #376ba6;
+}
+.navbar-team .navbar-nav > li > .dropdown-menu > li > a {
+    color: #ffca09;
+}
+.navbar-team .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-team .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #ffca09;
+    background-color: #458fcd;
+}
+.navbar-team .navbar-nav > li > .dropdown-menu > li > .divider {
+    background-color: #376ba6;
+}
+.navbar-team .navbar-nav > .active > a, .navbar-team .navbar-nav > .active > a:hover, .navbar-team .navbar-nav > .active > a:focus {
+    color: #EA2E7F;/*#ffca09;;*/
+    background-color: #458fcd;
+}
+.navbar-team .navbar-nav > .open > a, .navbar-team .navbar-nav > .open > a:hover, .navbar-team .navbar-nav > .open > a:focus {
+    color: #ffca09;;
+    background-color: #458fcd;
+}
+.navbar-team .navbar-toggle {
+    border-color: #458fcd;
+}
+.navbar-team .navbar-toggle:hover, .navbar-team .navbar-toggle:focus {
+    background-color: #458fcd;
+}
+.navbar-team .navbar-toggle .icon-bar {
+    background-color: #ffca09;
+}
+.navbar-team .navbar-collapse,
+.navbar-team .navbar-form {
+    border-color: #ffca09;
+}
+.navbar-team .navbar-link {
+    color: #ffca09;
+}
+.navbar-team .navbar-link:hover {
+    color: #ffca09;;
+}
+.mobile-menu{
+    color: #f02b7a;
+    display: inline-block;
+    float: left;
+    width: 55px;
+    font-size: 14px;
+}
+.burger-btn{
+    padding: 2px;
+    display: block;
+    float:left;
+}
+@media (max-width: 767px) {
+    .navbar-team .navbar-nav .open .dropdown-menu > li > a {
+        color: #ffca09;
+    }
+    .navbar-team .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-team .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #ffca09;;
+    }
+    .navbar-team .navbar-nav .open .dropdown-menu > .active > a, .navbar-team .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-team .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #ffca09;;
+        background-color: #458fcd;
+    }
+}
+/* --end of navbar style */
+
+.row.no-gutter {
+    margin-right:0;
+    margin-left:0;
+}
+.row.no-gutter > [class*='col-'], .row.normal-nogutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.adminTopNav {
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+.i-box{
+    padding: 18px 24px 12px;
+    background-color: #FFF9D4;
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.r-box{
+    padding: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: #e0e0ee;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.25);
+}
+.p-box {
+    font-size: 16px;
+    padding: 24px;
+}
+.p-box p:last-child {
+    margin-bottom: 0;
+}
+.pic-box{
+    padding: 12px 0;
+}
+.idCard {
+    height: 160px;
+    max-width: 400px;
+}
+.buktiTransfer {
+    max-width: 400px;
+    max-height: 400px;
+}
+.penting {
+    color: #ff7070;
+    font-weight: bold;
+}
+.form-row {
+    margin-bottom: 16px;
+}
+.form-row:last-child{
+    margin-bottom: 0;
+}
+.cust-control {
+    padding: 3px 6px;
+    border: 2px solid #DADADA;
+    width: 100%;
+}
+select.cbo-full{
+    width: 100%;
+}
+label {
+    width: 100%;
+    padding-top: 2px;
+}
+.required {
+    color: #ee0000;
+    padding: 2px;
+}
+.fw-textarea{
+    width: 100%;
+    resize: vertical;
+}
+.mylabel {
+    font-weight: bold;
+    text-align: right;
+}
+.main-dash h3, .main-dash h4{
+    color: #F02B7A;
+}
+.mb {
+    margin-bottom: 20px;
+}
+.mt {
+    margin-top: 15px;
+}
+.panelbox {
+    background: #ffffff;
+    box-shadow: 0px 3px 2px #aab2bd;
+    padding-bottom: 5px;
+}
+.panelbox h4 {
+    text-align: center;
+    color: #FFF;
+    background-color: #EA2E7F;
+    padding: 12px 0;
+}
+.num-big {
+    text-align: right;
+    font-size: 24px;
+    padding: 0 12px;
+}
+.topTitle{margin-top: 0; margin-bottom: 20px}
+
+.progNavbar{
+    padding: 6px;
+    background-color: #FFBD69;
+}
+.progNavbar h2 {
+    text-align: center;
+    font-size: 16px; margin-top:0px;
+}
+.proglink a {
+    display: block;
+    text-align: center;
+    color: #EA2E7F;
+    border-right: 2px solid #ec971f;
+    padding: 6px 18px;
+}
+.proglink {
+    float: left;
+    width:auto;
+}
+.proglink a.cur {
+    color: #424242;
+}
+.progtbl{
+    padding: 6px 12px;
+}
+.progtbl-head{border: 2px solid #3F3F3F;}
+.progtbl-th{border-right: 1px solid #3F3F3F;}
+.progtbl:nth-child(even){
+    background-color: #ffecb3;
+}
+.progtbl:nth-child(odd){
+    background-color: #ffcc80;
+}
+.tbl-hdr a{ font-size: 16px; font-weight: bold; color: #EA2E7F; padding: 0 12px }
+.tbl-hdr {font-weight: bold;}
+.progtbl a.btn-ilpc {padding-bottom: 3px; padding-top: 3px; margin-bottom: 3px; margin-top: 3px;}
+.red{color: #F44336;}
+
+.score-tbl{
+    border-collapse: collapse;
+}
+.score-tbl th {
+    background-color: #EAC809;
+    text-align: center;
+}
+.score-tbl th, .score-tbl td {
+    border:1px solid #3F3F3F;
+}
+.score-tbl td {padding: 2px 6px;}
+.score-tbl .school { padding-left: 12px; padding-bottom: 6px;}
+
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+}
+/* -- styling non general--*/
+.noUrut{
+    text-align: center;
+}
+.ilpc-header{
+    background-color: #376ba6;
+    margin-top: 0;
+}
+.top-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.top-ubaya {
+    height: 30px;
+}
+.top-newilpc {
+    text-align: center;
+}
+.top-newilpc img {
+    max-height: 40px;
+}
+.top-ilpc{
+    text-align: right;
+    width: 100%;
+}
+.top-ilpc img {
+    max-width: 130px;
+}
+
+.pesanSalah{
+    color:#ff7070;
+}
+.warn-box{
+    background-color: #ff8484;
+    padding: 16px;
+    margin-top:12px;
+    border-radius:15px;
+}
+.success-box {
+    background-color:#c0c334;
+    border-radius: 15px;
+    margin-top: 12px;
+    padding: 16px;
+}
+.warn-box p, .success-box p {
+    margin-bottom: 0;
+}
+.member-box {
+    min-height: 350px;
+}
+.databox{
+    background-color: #ffffff;
+    text-align: left;
+    border-bottom: solid #737373;
+    padding: 6px 0;
+}
+.databorder{
+    border: solid;
+    border-width: 1px;
+    margin: 5px;
+    background-color: #376ba6;
+}
+
+.databorder1{
+    border: solid;
+    border-width: 1px;
+    margin-bottom: 20px;
+    background-color: #86dfff;
+}
+
+.databorder2{
+    border: solid;
+    border-width: 1px;
+    margin: 5px;
+    background-color: #ff5a58;
+}
+
+.databorder3{
+    border: solid;
+    border-width: 1px;
+    margin: 5px;
+    background-color: #59ff68;
+}
+.mytab{
+    border: solid;
+    border-width: 2px;
+    background-color: #458fcd;
+	color: #f5f5f5;
+}
+.contactbox {
+    padding: 12px 18px;
+    background-color: #F3F3F3;
+    margin: 12px 0 18px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.student-id{
+    max-height: 175px;
+}
+.student-id img{
+    max-width: 230px;
+    max-height: 175px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.prob-hdr{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #3F3F3F;
+}
+.prob-hdr h1{margin-top: 0;}
+.narasi {
+    margin-top: 18px;
+}
+/* --Footer styles--*/
+.my-footer {
+    height: 270px;
+    background-color: #b16000;
+}
+.kaki{
+    padding: 24px 24px 12px;
+    margin:auto;
+    text-align: center;
+}
+
+.kaki .copyright{
+    text-align: center;
+    /*margin-top:5vh;
+    margin-bottom:5vh;*/
+    color:#ffd19b;
+}
+.copyright {
+    padding-top: 12px;
+    font-size: 12px;
+}
+.kaki img {
+    max-height: 80px;
+}
+/* -- end of footer style --*/
+
+@media (min-width: 768px) {
+    label.md-right {
+        text-align: right;
+    }
+    .pgs-text .ket {
+        display: inline;
+    }
+
+    #myModal .modal-dialog {
+        width: 700px;
+    }
+    .logoubaya {
+    //width: 240px;
+    }
+    .top-logo {
+        text-align: center;
+        height: 40px;
+    }
+    .top-newilpc {
+    //height: 210px;
+    }
+    .top-newilpc img {
+    //max-height: 230px;
+    }
+
+    .proglink:last-child a {
+        border-right: none;
+    }
+}
+@media (min-width: 1200px) {
+    .student-id img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mylabel{
+        text-align: left;
+    }
+    .idCard {
+        height: 100px;
+        max-width: 180px;
+    }
+    .buktiTransfer {
+        max-width: 240px;
+        max-height: 270px;
+    }
+
+    .proglink{
+        width: 33.333%;
+    }
+    .proglink a {
+        padding: 6px 0px;
+        margin-bottom: 6px;
+    }
+    .proglink:nth-child(3n+1) a {
+        border-left: 2px solid #ec971f;
+    }
+}

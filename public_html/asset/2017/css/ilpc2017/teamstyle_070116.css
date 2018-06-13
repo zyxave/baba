@@ -1,0 +1,12 @@
+
+.contactbox {
+    padding: 12px 18px;
+    margin: 12px 0 18px;
+}
+
+.student-id img{
+    max-width: 280px;
+    max-height: 225px;
+    display: inline-block;
+    margin: 0 auto;
+}

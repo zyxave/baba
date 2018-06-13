@@ -1,0 +1,22 @@
+application/config/development/
+application/vendor/
+application/logs/*
+application/cache/*
+/vendor/
+
+application/sessions/*
+!application/sessions/index.html
+!application/sessions/.htaccess
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+

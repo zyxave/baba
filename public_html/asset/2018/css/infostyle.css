@@ -1,0 +1,744 @@
+*{
+    font-family: Montserrat;
+    font-weight: 400;
+}
+html,body {
+    height: 100%;
+}
+body{
+    background-color: #ffe346;
+}
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -300px;
+    padding: 0 0 300px;
+}
+.width-wrapper{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-top: 12px;
+    background-color: inherit;
+}
+.row.no-gutter {
+    margin-right:0;
+    margin-left:0;
+}
+.row.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.notes-box{
+    padding: 12px 24px 12px;
+    margin: 18px auto;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color:#B762A2;
+    font-weight: normal;
+}
+.notes-box .blok{
+    display: block;
+    font-weight: 400;
+    padding: 6px 0;
+}
+
+.pic-box img {
+    width: 100%;
+    padding: 12px 0 24px;
+}
+
+.light-org-area {
+    background-color: #fff39d;
+}
+.dark-org-area {
+    background-color: #ffcc60;
+}
+/*--content styling---*/
+.notfound{
+    text-align: center;
+    color: #f02b7a;
+}
+
+.top-logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.top-ubaya {
+    height: 70px;
+}
+.top-newilpc {
+    text-align: center;
+}
+.top-newilpc img {
+    max-height: 150px;
+}
+.top-ilpc{
+    text-align: right;
+    width: 100%;
+}
+.top-ilpc img {
+    max-width: 130px;
+}
+
+img.sect-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ttgILPC{
+    margin-top: 16px;
+    text-align: right;
+}
+.ttgILPC .sect-img{
+    float: right;
+    max-width: 200px;
+}
+.ttgILO{
+    margin-top: 16px;
+    text-align: justify;
+}
+.ttgILO .sect-img {
+    float: left;
+    max-width: 200px;
+}
+
+.registrasi h3{
+    margin-top: 32px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.regTime{
+    //padding-top:0.7vh;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color:white;
+    font-size: 12pt;
+    //min-height:232px;
+    background-color: #D14B34;//#ce4a31;
+}
+.regTime .big{
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 20pt;
+}
+.batch1 {
+    font-size: 32px;
+    padding: 12px 0;
+}
+.batch1 .term-cond, .batch2 .term-cond {
+    font-size: 16px;
+    color: #FFF;
+}
+.batch2 {
+    padding: 12px 0;
+}
+.harga{
+    font-size: 32px;
+    color: #FFF;
+    background-color: #d5725f;
+}
+.hargaNormal{
+    text-align: center;
+    padding: 12px;
+}
+.regGo{
+    /*min-height: 232px;*/
+    background-color: #5b1d12; /*#ce4a31;*/
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 40pt;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.regGo a {
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+}
+.registrasi a{
+    color:white;
+    font-family: inherit;
+}
+.registrasi a:hover{
+    color:#ffc7bc;
+    text-decoration: none;
+}
+.regTerm{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color:white;
+    /*min-height:232px;*/
+    background-color: #a83724;/*#d5725f;*/
+}
+.regTerm span{
+    font-weight: bold;
+    font-size: 16px;
+}
+.regTerm h4 {
+    font-family: Oswald;
+    font-weight: 700;
+    font-size: 20pt;
+    color: #FFF;
+    margin: 0;
+}
+.horLine{
+    background-color: white;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    height: 2px;
+}
+
+/* PRIZE STYLE */
+.prize h3{
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.prize img{
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 18px;
+}
+.prizeDesc1{
+    padding-top: 6px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+.prizeDesc2 {
+    padding-top: 5%;
+    font-size: 16px;
+    text-align: right;
+}
+.prizeDesc1 h4, .prizeDesc2 h4{
+    font-size: 24px;
+    color: #B660A4;
+}
+.ket-drop{
+    //display: block;
+}
+
+.timeline{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.timeline table {
+    width: 100%;
+    border: 1px solid #000000;
+}
+.timeline table tr td{
+    padding: 12px;
+    background-color: #fff9d4;
+    border: 1px solid #000000;
+}
+.timeline table tr td:first-child{
+    width:60%;
+}
+.timeline table thead td{
+    background-color: #d3452f;
+    color:white;
+    font-size: 15pt;
+}
+.timeline h3{
+    margin-top: 6px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+
+/* contact styles*/
+.contact{
+    padding-bottom: 24px;
+}
+.contact h1{
+    margin-top: 24px;
+    font-weight:700;
+    font-size: 5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.contact table{
+    margin:auto;
+}
+.contact td{
+    padding:2vh;
+}
+.contact-person{
+    max-width: 400px;
+    margin: 0 auto 24px;
+    font-size: 16px;
+
+}
+.contact-person .person{
+    text-align: right;
+    padding: 6px 0px 6px 12px;
+    width: 100%;
+}
+.contact-person .phone{
+    padding: 6px 12px;
+    width: 100%;
+}
+.contact-person .email{
+    padding: 6px 0;
+    text-align: center;
+}
+.medsos{
+    text-align: center;
+    font-size: 14px;
+}
+.fb .icon{
+    color: #3E5B99;
+}
+.twit .icon{
+    color: #55ACEE;
+}
+.ig .icon{
+    color: #295A82;
+}
+.medsos-box{
+    max-width: 180px;
+    min-height: 90px;
+
+    margin: 0 auto;
+}
+.medsos-box img{
+    width: 100%;
+}
+.medsos-box a {
+    width: 100%;
+    display: block;
+}
+.medsos-box a:hover{
+    text-decoration: none;
+}
+.medsos-box .icon{
+    font-size: 90px;
+}
+.line img {
+    max-width: 90px;
+}
+.addr{
+    text-align: center;
+}
+/*-- Akomodasi -- */
+.akomodasi {
+    margin: 24px auto;
+}
+.akomodasi h1{
+    margin-top: 24px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.denah img{
+    height:80%;
+}
+.hotel{
+    padding: 6px 24px;
+}
+.hotel:nth-child(odd){
+    background-color: #fff39d;
+}
+.hotel:nth-child(even){
+    background-color: #ffcc60;
+}
+.taksi .name{
+    text-align: right;
+    padding: 6px 0px 6px 12px;
+}
+.taksi .phone{
+    padding: 6px 12px;
+}
+.ako-box{padding: 0 12px;}
+.ilpc2016 h1{
+    margin-top: 24px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.ilpc2016 h2{
+    margin-top: 24px;
+    font-weight:700;
+    font-size: 1.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.ilpc2016 p{
+    text-indent: 30px;
+}
+
+/* --faq style -- */
+.faq h1{
+    margin-top: 24px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+.question{
+    padding: 6px 18px;
+}
+.question p {
+    margin: 6px 0;
+}
+/*.question:nth-child(odd){
+    background-color: #fff39d;
+}
+.question:nth-child(even){
+    background-color: #ffcc60;
+}*/
+.even-data{
+    background-color: #ffcc60;
+}
+.odd-data{
+    background-color: #fff39d;
+}
+
+.faq, .peraturan {
+    margin-bottom: 24px;
+    padding: 0 18px;
+}
+.peraturan h1, h1.panduan{
+    margin-top:24px;
+    font-weight:700;
+    font-size: 3.5em;
+    text-align:center;
+    color: #f02b7a;
+}
+/* --styling panduan --*/
+.penting {
+    font-weight: bold;
+}
+.deskripsi {
+    padding-top: 12px;
+}
+.deskripsi p{
+   font-size: 16px;
+}
+.deskripsi-prog, .deskripsi-logic{
+    margin-bottom: 24px;
+}
+.prog-box{
+    padding: 12px 12px 0px;
+    margin-bottom: 12px;
+    /* background-color: #ffcc60; */
+}
+.a-box{
+    padding-top: 12px;
+}
+.orange-box {
+    padding: 12px;
+    margin-bottom: 24px;
+    background-color: #FFF39D;
+}
+.soal-header{
+    text-align: center;
+    font-weight: bold;
+}
+.desc-soal{
+    padding: 12px;
+    text-align: justify;
+}
+.desc-soal h4 {
+    font-weight: bold;
+}
+.konsole {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+}
+.source-code span{
+    font-size: 14px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+.soal-table td, .soal-table th{
+    border: 1px solid #000;
+    padding: 6px 12px;
+}
+.prog-box h3, .orange-box h3 {
+    margin-top: 10px;
+    color: #EA2E7F;
+}
+.prog-box .term-cond{
+    font-size: inherit;
+}
+/*-- about style --*/
+.about h3 {
+    text-align: left;
+    color: #EA2E7F;
+    font-weight: bold;
+}
+.detail {
+    margin-left: 6px;
+    font-size: 16px;
+}
+.iloBig{
+    max-width: 400px;
+    margin: auto;
+}
+/* --Footer styles--*/
+.my-footer {
+    height: 300px;
+    background-color: #b16000;
+}
+.kaki{
+    padding: 12px 24px;
+    margin:auto;
+    text-align: center;
+}
+
+.kaki .copyright{
+    text-align: center;
+    /*margin-top:5vh;
+    margin-bottom:5vh;*/
+    color:#ffd19b;
+}
+.copyright {
+    padding-top: 12px;
+    font-size: 12px;
+}
+.kaki img {
+    max-height: 80px;
+}
+.border-left{
+    border-left: #f02b7a 2px solid;
+}
+.s-box .r-border{
+    border: none;
+}
+.tagline {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #f02b7a;
+}
+.term-cond{
+    color: #f02b7a;
+}
+p.term-cond{
+    font-size: 16px;
+}
+/*sponsor*/
+.iklan {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0 12px;
+}
+.iklan h3{
+    margin-top: 6px;
+    font-weight:700;
+    font-size: 20px;
+    text-align:center;
+    color: #f02b7a;
+}
+.sponsorpic {
+    padding: 24px 0;
+    text-align: center;
+}
+.sponsorpic img{
+    width: 75%;
+}
+.mediapartner{
+    padding: 12px 0 0;
+}
+
+.lolosSF{margin:12px auto 12px;}
+.lolosSF .intro{
+    font-size: 16px;
+    color: #EA2E7F;
+    padding: 12px 0;
+    font-weight: bold;
+}
+.lolosSF .closing {
+    padding: 12px 0 0;
+    color: #EA2E7F;
+    font-size: 16px;
+}
+table.sfList {
+    width: 100%;
+}
+.sfList th{
+    background-color: #d3452f;
+    color: #FFFFFF;
+    border: 1px solid #000000;
+    font-size: 16px;
+    text-align: center;
+}
+.sfList td {
+    border: 1px solid #000000;
+    background-color: #fff9d4;
+    padding: 3px 12px 3px;
+}
+.sfList .tim {font-weight: bold; font-size: 15px;}
+
+@media screen and (min-width: 480px) {
+    #wrap {
+        margin: 0 auto -260px;
+        padding: 0 0 260px;
+    }
+    .my-footer {
+        height: 260px;
+    }
+    .sponsorpic img{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .r-border{
+        border-right: #f02b7a 2px solid;
+    }
+    .top-logo {
+        text-align: center;
+        height: 110px;
+    }
+
+    .top-newilpc {
+        height: 210px;
+    }
+    .top-newilpc img {
+        max-height: 230px;
+    }
+    .ilpc-header{
+        margin: 12px auto;
+    }
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+    img.sect-img {
+        max-width: 100%;
+        max-height: 250px;
+    }
+    .registrasi h3{
+        font-size: 5em;
+    }
+
+    .harga {
+        font-size: 40px;
+    }
+
+    .prizeDesc1{
+        padding-top: 24px;
+        text-align: left;
+        font-size: 20pt;
+    }
+    .prizeDesc2{
+        padding-top: 24px;
+        text-align: right;
+        font-size: 20pt;
+    }
+    .prize h3 {
+        font-size: 5em;
+    }
+    .prizeDesc1 h4, .prizeDesc2 h4 {
+        font-size: 36px;
+    }
+    .timeline h3{
+        font-size: 5em;
+    }
+
+    .medsos{
+        font-size: 15pt;
+    }
+    .medsos-box .icon{
+        font-size: 180px;
+    }
+    .line img {
+        max-width: 100%;
+    }
+    .akomodasi h1{
+        font-size: 5em;
+    }
+
+    .ilpc2016 h1{
+        font-size: 5em;
+    }
+    .ilpc2016 h2 {
+        font-size: 2em;
+    }
+
+    .faq h1{
+        font-size: 5em;
+    }
+    .peraturan h1, h1.panduan{
+        font-size: 5em;
+    }
+
+    .prog-box {
+        padding: 12px 12px 0;
+        margin-left: 24px;
+    }
+    .orange-box {
+        margin-left: 24px;
+    }
+
+    .detail {
+        margin-left: 18px;
+    }
+
+    .iklan h3 {
+        font-size: 32px;
+    }
+    .treq {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .regTime{
+        min-height: 232px;
+    }
+    .regGo {
+        min-height: 232px;
+    }
+    .regGo a {
+        min-height: 196px;
+    }
+    .regTerm{
+        min-height: 232px;
+    }
+    .ket-drop{
+        display: inline;
+    }
+
+    .sponsorpic img{
+        width: 70%;
+    }
+    .hotel:nth-child(even){
+        background-color: #fff39d;
+        border-left: solid 1px #EA2E7F;
+    }
+    .hotel:nth-child(odd){
+        border-right: solid 1px #EA2E7F;
+    }
+}
+@media screen and (min-width: 1200px) {
+/*    .s-box .r-border{
+        border-right: #f02b7a 2px solid;
+    }*/
+    .ttgILPC .sect-img, .ttgILO .sect-img {
+        max-width: 250px;
+    }
+    .regGo a {
+        padding-top: 58px;
+        padding-bottom: 58px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .akomodasi{
+        margin: 0px auto;
+    }
+    .contact-person .person, .contact-person .phone{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,502 @@
+/********************** NAVBAR ***********************/
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+
+@font-face {
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+
+.logo-navbar-tengah {
+    position: absolute;
+    left: 50%;
+    margin-top: 6px;
+    margin-left: -35px !important;  /* 50% of your logo width */
+    display: block;
+    background: #feef5e;
+    border: 4px solid #ffffff;
+    border-radius: 1000px;
+    padding: 8px 20px;
+}
+
+.jam-server {
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color:#FEEF5E;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 1.2em;
+}
+
+
+/***********************************************************/
+
+/*************************CONTEST*******************************/
+.nomor-soal {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: bold;
+    color: #2B3990;
+}
+
+.no-contest{
+    padding:20px;
+}
+
+.available-contest, .upcoming-contest {
+    padding: 20px;
+}
+
+
+.contest-table{
+    font-size: 1.1em; 
+}
+
+.contest-table thead {
+    font-weight: bold;
+    background-color: #2B3990;
+    color: #fff;
+}
+
+.contest-table thead > tr > td, .contest-table tbody > tr > td {
+    padding: 16px;
+}
+
+.judul-contest {
+	text-align:center;
+	color: #2B3990;
+}
+
+.tombolContest{
+    width:100%;
+    margin:20px 0px;
+    border-collapse: collapse;
+}
+.tombolContest thead{
+    text-align: center;
+    background-color: #5b1d12;
+    color: white;
+    font-weight: 700;
+}
+.tombolContest td{
+    border-left: solid 1px #5b1d12;
+    border-bottom: solid 1px #5b1d12;
+    border-right: solid 1px #5b1d12;
+    padding:15px;
+    text-align: center;
+}
+.tombolContest thead td{    
+    border-left: solid 1px bisque;
+    border-right: solid 1px bisque;
+}
+.tombolContest {
+    padding:10px 15px;
+    background-color: #2B3990;
+    color: #f5f5f5;
+    margin:15px 10px;
+    border:none;
+    border-radius: 1000px;
+}
+.tombolContest:hover{    
+    text-decoration: none;
+    background-color: #00baf1;
+    color: #f5f5f5;
+}
+.tombolContest.disabled {
+    background-color: #2B3990;
+}
+.tombolContest.disabled:hover {
+    color: #f5f5f5;
+}
+
+.btn-submit-logika {
+    margin-top: 20px;
+    padding: 10px 24px;
+    font-size: 24px;
+    line-height: 1.6666;
+    border-radius: 1000px;
+    display: block;
+}
+
+
+/***** Active Contest Logika ****/
+.logika {
+    background-image: url(../img/bg-cloud.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.judul-logika {
+	padding: 30px 0;
+    background-color: #FEEF5E;
+    margin-bottom: 30px;
+}
+
+.bagian-soal-logika {
+	padding : 30px 0;
+	background-color: #f2f2f2;
+}
+
+.per-soal-logika {
+	padding: 15px 40px 40px 40px;
+}
+
+.clarification-button {
+    float:left;  
+    top: 50%;
+    background-color: #2B3990;
+    width: 60px;
+    height: 60px; 
+    padding: 10px; 
+    position: fixed; 
+    border-radius:50px;
+    box-shadow: 0px 2px 0px 3px #173754;
+}
+
+.clarification-button:hover {
+    background-color: #458fcd;
+}
+
+/********** Active Contest Programming *********/
+.kolom-soal {
+padding: 25px 0px 0px 0px;
+}
+
+.kolom-scoreboard {
+/*background-color:#afc3f7;*/
+background-image: url(../img/bg-cloud.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+margin-top:15px;
+padding: 20px 0px 20px 0px;
+}
+
+
+.tombolScoreboard, .tombolScoreboard:active, .tombolScoreboard:visited {
+    padding:10px 35px;
+    background-color: #0a39af;
+    color: #f5f5f5;
+    font-size:16pt;
+    margin:15px 10px;  
+}
+.tombolScoreboard:hover{
+    background-color: #3364e0;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.tombolSubmissions, .tombolSubmissions:active, .tombolSubmissions:visited {
+    padding:10px 35px;
+    background-color: #0a39af;
+    color: #f5f5f5;
+    font-size:16pt;
+    margin:15px 10px;  
+}
+.tombolSubmissions:hover{
+    background-color: #3364e0;
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+.tombolSubmit2{
+    background-color: #6d9bbc;
+    color: white;
+}
+.tombolSubmit2:hover{
+    background-color: #3b576b;
+    color: white;
+    text-decoration: none;
+}
+.tombolSubmit2Aktif{  
+    background-color: #3b576b;
+    color: white;
+    text-decoration: none;
+}
+.tombolSubmit2Aktif:hover{
+    text-decoration: none;   
+    color: white;
+}
+.tombolHistory2{
+    background-color: #2B3990;
+    color: white;
+}
+.tombolHistory2:hover{
+    background-color: #3b576b;
+    color: white;
+    text-decoration: none;
+}
+.tombolHistory2Aktif:hover{
+    text-decoration: none;   
+    color: white;
+}
+.tombolHistory2Aktif{
+    background-color: #3b576b;
+    color: white;
+    text-decoration: none;
+}
+.tombolClar2{
+    background-color: #0d417b;    
+    color: white;
+}
+.tombolClar2:hover{
+    background-color: #3b576b;    
+    color: white;
+    text-decoration: none;
+}
+.tombolClar2Aktif{
+    background-color: #3b576b;    
+    color: white;
+    text-decoration: none;
+}
+.tombolClar2Aktif:hover{
+    text-decoration: none;   
+    color: white;    
+}
+.garisHor2{
+    border-top: 2px white solid;
+}
+.isiTombol2{
+    margin: 15px 0px;
+}
+.floatNone{
+    float:none;
+}
+.center-content{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/*******************************/
+
+/************** SUBMIT SOURCE CODE *************/
+.kolom-source{
+text-align:center;
+}
+
+.kolom-program{
+padding-top: 10px;
+padding-bottom:10px;
+}
+
+.form-source{
+    margin: 10px;
+	text-align: center;
+}
+
+.rataKanan {
+	text-align:right;
+}
+
+.submitWarning{
+    background-color: #61C77B;
+    padding:15px;
+    margin:10px 0px;
+}
+.submitFailed{
+    background-color: #E03833;
+    color: #F0F5FF;
+    padding:15px;
+    margin:10px 0px;
+}
+
+/*****************************************/
+
+/******************CLARIFICATION********************/
+.jenis-kontes{
+    margin-top: 20px;
+    background-color: #FEEF5E;
+    margin-bottom: 20px;
+}
+
+.form-klarifikasi {
+    margin-bottom: 50px;
+}
+
+.form-clar{
+    margin: 15px;
+	
+}
+
+.btn-clar {
+margin-left: 365px;
+}
+
+/******************************************/
+
+/************************SUBMISSION HISTORY********************/
+.table-submission {
+    background-color: #fff;
+}
+
+.table-submission thead {
+    background-color: #376ba6;
+    color: #fff;
+    text-align: center;
+}
+
+.table-submission tr > td:first-child {
+    text-align: center;
+}
+
+//*************PROGRAMMING SOAL*************************//
+.wrapper-md2 {
+    max-width: 1160px;
+    margin: 0 auto;
+	margin-top: -20px;
+	
+	background-color:#f2f2f2;
+	
+}
+
+.bagian-programming {
+padding: 15px 40px 40px 40px;
+}
+
+.judul-soal{
+	margin-top: 10px;
+}
+
+.prob-hdr2{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #3F3F3F;
+}
+
+
+.narasi2 {
+    margin-top: 18px;
+}
+
+.navbar2 .navbar2-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar2 .navbar2-collapse {
+  text-align: center;
+}
+
+.kolom-judul {
+margin-top:-10px;
+margin-bottom:-10px;
+}
+
+.ilpc-header2{
+    background-color: #376ba6;
+    margin-top: -20px;
+}
+
+.top-ubaya2 {
+    text-align: left;
+}
+.top-ubaya2 img {
+    width: 20%;
+}
+.top-newilpc2 {
+    text-align: center;
+}
+.top-newilpc2 img {
+    width: 40%;
+}
+.top-ilpc2{
+    text-align: right;
+    width: 100%;
+}
+.top-ilpc2 img {
+    width: 40%;
+}
+
+.konten-submit-source {
+background-color: #aec1ef;
+padding: 15px 15px 15px 15px;
+margin-top:30px;
+margin-bottom:30px;
+margin-left:150px;
+margin-right:150px;
+
+}
+
+//******************************/
+
+/*************************SCOREBOARD************************/
+.kolom-scoreboard {
+	
+}
+
+.konten-scoreboard {
+margin-top:35px;
+}
+
+.konten-scoreboard2 {
+padding-top: 25px;
+padding-bottom: 25px;
+text-align: center;
+}
+
+.table-scoreboard {
+margin-left:100px;
+margin-right:100px;
+margin-bottom: 50px;
+}
+
+.table-scoreboard2 {
+    background-color: #fff;
+}
+
+.table-scoreboard2 thead {
+    background-color: #2B3990;
+    color: #fff;
+    text-align: center;
+}
+
+.table-scoreboard2 tr > td:first-child {
+    text-align: center;
+}
+
+.ac{
+    background-color: #47d66f;
+}
+
+.wa {
+    background-color: #ff7668;
+}
+/****************************************************/
+
+
+
+/******************* SUBMISSION *********************/
+
+
+.submit-notification { 
+    /*background-color: #fff;*/
+    padding: 50px 0;
+    background-image: url(../img/bg-cloud.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****************************************************/
+
+@media all and (max-width : 1050px){
+
+.table-scoreboard {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 50px;
+}
+
+.table-scoreboard2 {
+    background-color: #fff;
+    display: block;
+    overflow: auto;
+}
+
+}

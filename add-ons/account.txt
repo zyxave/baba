@@ -1,0 +1,28 @@
+1. GMAIL SI ILPC
+email: si.ilpc.ubaya@gmail.com
+password: s1IlpcUbaya
+recovery email: ksm.if.ubaya@gmail.com (hubungi KSM-IF)
+
+2. DIGITAL OCEAN (VPS)
+email: si.ilpc.ubaya@gmail.com
+password: s1IlpcUbaya
+
+3. SSH
+username: durian
+password: punya@Melisa!
+passphrase: Du214n@ILPC#2018
+
+4. SEND GRID (3rd-party email server)
+username: ilpc_ubaya
+password: 1ngat#Selalu!
+
+5. MYSQL WORKBENCH (database)
+hostname: 127.0.0.1
+port: 3306
+username: root
+password: punya@ILPC18!
+
+6. G SUITES (untuk pasang SSL)
+www.ifubaya.com
+admin@ifubaya.com
+pass: pm ke roy / butuh biaya 3$ per bulan

@@ -1,0 +1,1356 @@
+/*
+ -------------------------------
+|                               |
+|           ILPC 2018           |
+|                               |
+ -------------------------------
+*/
+
+
+/**************************** UMUM ********************************/
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+@import 'https://fonts.googleapis.com/css?family=Cutive+Mono';
+@font-face {
+    font-family: 'DKCinnabarBrush';
+    src: url("../fonts/dk-cinnabar-brush.ttf");
+}
+
+@font-face {
+    font-family: 'EdoSZ';
+    src: url("../fonts/edosz.TTF");
+}
+
+#judul-nomor { font-family: 'EdoSZ'; font-size: 1.2em; }
+
+html, body {
+    height: 100%;
+    color: #373a3c;
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DKCinnabarBrush';
+    letter-spacing: 1px;
+}
+
+.btn-ilpc {
+    /*box-shadow: 0px 2px 0px 3px #173754;
+    background-color: #2b3990;
+    font-family: 'DKCinnabarBrush', 'sans-serif';
+    color: #Feef5e;
+    letter-spacing: 1px;*/
+
+    background:    #feef5e;
+    border:        4px solid #ffffff;
+    border-radius: 1000px;
+    padding:       11px 10px;
+    color:         #1c4498;
+    display:       inline-block;
+    font-family:   'DKCinnabarBrush', 'sans-serif';
+    text-align:    center;
+    text-shadow:   none;
+    font-size: 1.2em;
+}
+
+.btn-ilpc:hover, .btn-ilpc:focus {
+    background-color: #B6E4FA;
+    color: #1c4498;
+}
+
+.btn-ilpc.active {
+    background-color: #feef5e;
+    color: #1c4498;
+}
+
+.navbar {
+    margin-bottom: 0 !important;
+    font-family: 'DKCinnabarBrush';
+    letter-spacing: 1px;
+    min-height: 60px;
+    border-radius: 0px;
+}
+
+.navbar-btn {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    margin-right:20px;
+}
+
+@media only screen and (max-width : 767px) {
+    body{
+        background: url(../img/bg-cloud-media.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%
+    }
+
+    .navbar-btn {
+        display:block;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+    }  
+}
+
+@media all and (max-width : 469px) {
+    body{
+        background: url(../img/bg-cloud-media.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%
+    }
+}
+
+.navbar-toggle {
+    margin-top: 12px;
+}
+
+.sponsor {
+    /*background-color: #f5f5f5;*/
+    background-image: url(../img/bg-cloud.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+    /*border-top: 1px solid #ccc;*/
+    /*display: none;*/
+}
+
+.sponsor-container {
+    width: 95%;
+    background-color: #feef5e;
+    padding-bottom: 20px;
+}
+
+.sponsor-title {
+    margin-bottom: 20px;
+    color: #1c4498;
+}
+
+.pure-footer {
+    background-color: #1c4498;
+    /*background: linear-gradient(#00BAF1, #B6E4FA);*/
+    padding: 20px 0;
+}
+
+.contact-footer {
+    padding: 20px 0;
+    background-color: #1c4498;
+}
+
+.copyright-text {
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+    color: #FEEF5E;
+    font-weight: bold;
+}
+
+.sosmed {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sosmed-logo {
+
+    margin-top: -20px;
+
+    -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sosmed-logo:hover {
+        transform: scale(1.2);
+   -moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+     -o-transform: scale(1.2);
+}
+
+.sosmed i {
+     -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.sosmed i:hover {
+     transform: scale(1.2);
+   -moz-transform: scale(1.2);
+-webkit-transform: scale(1.2);
+     -o-transform: scale(1.2);
+}
+
+.parallax { 
+    /* Full height */    
+    background-image: url("../img/bg-cloud.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-home,
+.header-detail,
+.header-panduan,
+.header-peraturan,
+.header-akomodasi,
+.header-galeri,
+.header-faq, 
+.header-contact
+{
+    padding: 40px 30px;
+    margin-top: 60px;
+}
+
+.updated {
+    font-style: italic;
+    color: #53585c;
+}
+
+/**************************** END OF UMUM ********************************/
+
+
+
+
+
+
+
+
+
+
+/**************************** HOME ********************************/
+
+.ilpc-logo {
+    padding-top: 80px;
+}
+
+.intro-ilpc {
+    min-height: 250px;
+    padding: 60px 0;
+    background: url("../img/bg-cloud.jpg");
+
+
+   /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-ilpc img {
+    margin: 20px 0px;
+}
+
+.intro-ilpc h1{
+	color: #1c4498;
+}
+
+.intro-ilpc p {
+    font-size: 1.5em;
+    color: #1c4498;
+}
+
+.intro-ilpc-container{
+    width: 95%;
+    background-color: #FEEF5E;
+}
+
+.video-promosi {
+    background: url("../img/bg-cloud.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promosi-box{
+    margin-top: 30px;
+    border: 4px solid #F0FC7D;
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.50), 0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+.juara h2 {
+    color: #1c4498;
+}
+
+.juara {
+    background-image: url("../../2018/img/bg-cloud.jpg");
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*padding: 30px 0px;
+    background-color: #ffffcc;*/
+}
+
+.juara-container{
+    width: 95%;
+    background-color: #FEEF5E;
+    padding-bottom: 20px;
+}
+
+
+.card {
+    /*background: url("../img/bg-cloud.jpg");*/
+    display: block;
+
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    margin: 16px;
+    
+    /*box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 4px;*/
+    
+    padding: 16px;
+}
+.card-question {
+    /*
+    background: url("../img/bg-cloud.jpg");
+    display: block;
+
+    Create the parallax scrolling effect
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+
+    background-color: #Feef5e;
+
+    margin: 16px;
+    
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 4px;
+    
+    padding: 16px;
+}
+
+
+.card > img {
+    margin-bottom: -20px;
+}
+
+.hadiah-uang{
+    font-size: 2.3em;
+    font-weight: bold;
+}
+
+.hadiah-medali{
+    font-size: 1.5em;
+}
+
+.hadiah-usp{
+    font-size: 1.5em;
+}
+
+.biaya {
+    padding: 20px 0;
+    background-color: #e83a3a;
+    color: #eee ;
+}
+
+.timeline {
+    padding-bottom: 100px;
+
+    background: url("../../2018/img/bg-cloud.jpg");
+
+   /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*menghilangkan bg hitam di carousel-control*/
+.carousel-control.left, .carousel-control.right {
+    background: none;
+}
+
+/*ganti style tulisan di dalam carousel*/
+.carousel-inner > .item {
+    color: #333;
+}
+
+.tl-title, .tl-date, .tl-desc {
+    text-align: center;
+    font-weight: bold;
+}
+
+.tl-date {
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+
+/*ganti warna indicator di carousel*/
+.carousel-indicators li {
+    background-color: #444433;    
+}
+
+.carousel-indicators .active {
+    background-color: #333; 
+}
+
+
+.daftar { 
+    min-height: 100px;
+    padding-bottom: 60px;
+    margin-top: -100px;
+    margin-bottom: -48px;
+}
+
+.btn-register {
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.6666;
+}
+
+@media only screen and (max-width : 340px) {
+.btn-register {
+    padding: 10px 16px;
+    font-size: 20px;
+    line-height: 1.6666;
+    border-radius: 6px;
+}  
+}
+
+.table-final {
+    background-color: #fff;
+	box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 4px;
+}
+
+.table-final thead {
+    background-color: #70b1e1;
+    color: #fff;
+    text-align: center;
+}
+
+.table-semifinal, .table-cadangan {
+    background-color: #fff;
+	 box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 4px;
+}
+
+.table-semifinal thead {
+    background-color: #376ba6;
+    color: #fff;
+    text-align: center;
+}
+
+.table-cadangan thead {
+    background-color: #173754;
+    color: #fff;
+    text-align: center;
+}
+
+.final {
+	padding-top: 20px;
+	background-color: #f5f5f5;
+}
+
+.semifinal {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	background-color: #f5f5f5;
+}
+
+.table-final tr > td:first-child {
+    text-align: center;
+}
+
+.table-semifinal tr > td:first-child {
+    text-align: center;
+}
+
+.table-cadangan tr > td:first-child {
+    text-align: center;
+}
+/**************************** END OF HOME ********************************/
+
+
+
+
+
+
+
+
+
+/********************************* PANDUAN **********************************/
+
+
+.panduan-utama {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.panduan-logika {
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.panduan-logika h2 {
+    font-weight: bold;
+}
+
+.soal-logika h3 {
+    color: #376ba6;
+}
+
+.soal-logika {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.panduan-programming {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.panduan-programming h2 {
+    font-weight: bold;
+}
+
+.deskripsi-programming{
+}
+
+.struktur-programming{
+    padding-left:50px;
+    padding-right:50px;
+    margin-bottom: 30px;
+}
+
+.struktur-programming h3{
+    color: #376ba6;
+}
+
+.soal-programming {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.soal-programming h3 {
+    color: #376ba6;
+}
+
+.soal-programming h4{
+    font-weight: bold;
+}
+
+.soal-header{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.penting {
+    font-weight: bold;
+
+}
+
+.source-code{
+    margin-top: 14px;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+.konsole {
+    font-family: 'Cutive Mono', monospace;
+}
+
+
+.compiler-ilpc {
+    background-color: #f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.isi-compiler h3 {
+    color: #376ba6;
+}
+
+.isi-compiler {
+    padding-left:50px;
+    padding-right:50px;
+}
+
+.penilaian-ilpc {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/**************************** END OF PANDUAN ********************************/
+
+
+
+
+
+
+
+
+/**************************** PERATURAN ********************************/
+
+.peraturan h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: -10px;
+    color: #1c4498;
+}
+
+.rules-umum, .rules-semifinal, .rules-final, .rules-penyisihan-programming {
+   padding: 20px 10px;
+}
+
+.rules-umum, .rules-semifinal, .rules-final, .rules-penyisihan-programming {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.rules-umum {
+    background-color: #fff;
+}
+
+.isi-rules-umum{
+    padding: 18px 30px 6px 30px;
+    font-size: 1.2em;
+}
+
+.isi-rules-umum:nth-child(odd) {
+    background-color: #FFF176;
+}
+
+.isi-rules-umum:nth-child(even) {
+    background-color: #FFF59D;
+}
+
+.term-cond {
+
+}
+
+
+.rules-semifinal{
+    background-color: #f2f2f2;
+}
+
+.isi-rules-semifinal{
+    padding: 18px 30px 6px 30px;
+    font-size: 1.2em;
+}
+
+.isi-rules-semifinal:nth-child(odd) {
+    background-color: #8BC34A;
+}
+
+.isi-rules-semifinal:nth-child(even) {
+    background-color: #AED581;
+}
+    
+
+
+.rules-final {
+    background-color: #fff;
+}
+
+.isi-final-umum, .isi-final-programming {
+    padding: 18px 30px;
+    font-size: 1.2em;
+}
+
+.isi-final-umum:nth-child(odd) {
+    background-color:#CFD8DC;;
+}
+
+.isi-final-umum:nth-child(even) {
+    background-color:#B0BEC5;
+
+}
+
+.final-programming {
+    margin-top: 20px;
+}
+
+.isi-final-programming:nth-child(odd) {
+    
+    background-color:#B0BEC5;
+}
+
+.isi-final-programming:nth-child(even) {
+    background-color:#CFD8DC;
+}
+
+
+.rules-penyisihan-programming {
+    background-color: #f2f2f2;
+}
+
+.isi-rules-penyisihan{
+    padding: 18px 30px;
+    font-size: 1.2em;
+}
+
+.isi-rules-penyisihan:nth-child(odd) {
+    background-color: #FFAB91;
+}
+
+.isi-rules-penyisihan:nth-child(even) {
+    background-color: #FF7043;
+}
+
+
+/**************************** END OF PERATURAN ********************************/
+
+
+
+
+
+
+
+
+
+/**************************** DETAIL LOMBA ********************************/
+
+.detail-lomba h1, .detail-lomba h2{
+    text-align: center;
+}
+
+.detail-lomba {
+    padding: 30px 0;
+    background-color: #F5F5F5;
+
+}
+
+.detail-penyisihan {
+    padding: 30px 0;
+    min-height: 380px;
+    background-image: url("../../2018/img/detail/penyisihan.jpg");
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.detail-semifinal {
+    padding: 30px 0;
+    min-height: 380px;
+    background-image: url("../../2018/img/detail/semifinal.jpg");
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.detail-final {
+    padding: 30px 0;
+    min-height: 380px;
+    background-image: url("../../2018/img/detail/final.jpg");
+
+    /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 767px) {
+        .detail-penyisihan{
+            background-image: none;
+            background-color: #6c9bbc;
+
+        }
+        .detail-semifinal {
+            background-image: none;
+            background-color: #0f437e;
+        }
+        .detail-final {
+            background-image: none;
+            background-color: #334840;
+        }
+    }
+
+.detail-title {
+    color: #f6e955;
+    letter-spacing: 1px;
+}
+
+.detail-desc {
+    font-size: 1.2em;
+    color: #FFFFFF;
+}
+
+
+.jadwal-lomba {
+    padding: 20px 20px 50px 20px;
+    background-color: #fafafa;
+}
+
+.ilpc-table {
+    font-size: 1.2em; 
+}
+
+.ilpc-table thead {
+    font-size : 1.6em;
+    font-weight: bold;
+    color: #1c4498;
+}
+
+.ilpc-table thead > tr > td, .ilpc-table tbody > tr > td {
+    padding: 16px;
+}
+
+
+
+
+/**************************** END OF DETAIL LOMBA ********************************/
+
+
+
+
+
+
+
+
+/**************************** FAQ ********************************/
+
+.faq {
+    /*background-color: #Feef5e;*/
+    padding: 30px 0;
+    background: url(../img/bg-cloud.jpg);
+    background-position: center;
+    background-attachment: fixed;;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.question-title {
+    color: #1c4498;
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.answer {
+    font-size: 1.2em;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/**************************** END OF FAQ ********************************/
+
+
+
+
+
+
+
+/**************************** AKOMODASI ********************************/
+
+.akomodasi {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f5f5f5;
+}
+
+.table-akomodasi {
+    background-color: #FFFFFF;
+}
+
+.table-akomodasi thead {
+    background-color: #1c4498;
+    color: #fff;
+    text-align: center;
+}
+
+.table-akomodasi tr > td:first-child {
+    text-align: center;
+}
+
+
+.hotel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #f5f5f5;
+}
+
+.list-hotel {
+    background: url(../img/bg-cloud.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.perhotel {
+    text-align: center;
+    padding: 20px;
+}
+
+.perhotel p{
+	font-weight: bold;
+}
+
+.graha-cempaka p {
+	font-size: 1.2em;
+}
+
+.recommended {
+	width: 200px;
+	height: 200px;
+}
+
+.recommended img {
+	position: relative
+}
+
+.icon-recommended {
+	position: relative;
+	top: -75px;
+	left: -40px;
+}
+
+
+/**************************** END OF AKOMODASI ********************************/
+
+
+
+
+
+
+/**************************** GALLERY ********************************/
+
+.gallery-box {
+    width: 100%;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.margin-galery {
+    margin-left: 10px;
+    margin-top: 10px;
+/*
+    background-image: url(../img/bg-cloud.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+}
+
+
+/**************************** END OF GALLERY ********************************/
+
+
+
+
+
+
+
+/**************************** KONTAK ********************************/
+
+.contact-us {
+    padding: 30px;
+    background-color: #f5f5f5;
+}
+
+.contact-box {
+    font-size: 1.5em;
+}
+
+.peta-ubaya {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background: url(../img/bg-cloud.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.map-box {
+    margin-top: 30px;
+    border: 4px solid #F0FC7D;
+    box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.50),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+/**************************** END OF KONTAK ********************************/
+
+
+/**************************LOGIN*********************************************/
+
+.body-stripes {
+    background: url("../img/bg-cloud_stretch.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-box {
+    padding: 0px;
+    margin-top: 40px;
+    background-color: #fff; 
+    box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.16), 0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+.header-ilpc {
+    background-color: #00BAF1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.input-login-box {
+    padding: 20px 50px 40px 50px;
+    background-color:#f5f5f5;
+    margin: 0px;
+}
+
+.btn-login {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width:100%;
+}
+
+.alert-gagal {
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #e74c3c;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+.alert-berhasil {
+    font-weight: bold;
+    color: #f5f5f5;
+    background-color: #366aa6;
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.16),0 0px 0px 1px rgba(0, 0, 0, 0.06);
+}
+
+.lupaPass{
+    text-align: center;
+}
+.lupaPass a {
+    color: #376ba6;
+}
+.lupaPass a:hover{
+    color: #183756;
+}
+
+/*****************************END OF LOGIN***************************************/
+
+
+
+
+
+
+
+/**************************** FORGOT PASSWORD ********************************/
+
+.forgot-password-box {
+    padding: 20px 50px 100px 50px;
+    background-color:#f5f5f5;
+    margin: 0px;
+}
+
+.new-password-box {
+    padding: 20px 50px 100px 50px;
+    background-color:#f5f5f5;
+    margin: 0px;
+}
+
+.reset-overkuota-box {
+    padding: 20px 50px 100px 50px;
+    background-color:#f5f5f5;
+    margin: 0px;
+}
+
+.pesanSalah {
+    color: #e74c3c;
+    margin-left: 12px;
+}
+
+
+/**************************** END OF FORGOT PASSWORD ********************************/
+
+
+
+
+
+
+
+
+
+
+/**************************** REGISTRATION ********************************/
+.proses {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width : 767px) {
+    .proses {
+        margin-bottom: 100px;
+    }
+    .petunjuk {
+        margin-top: 150px;
+    }
+
+}
+
+@media only screen and (max-width : 321px) {
+    .proses {
+        margin-bottom: 130px;
+    }
+
+    .petunjuk {
+        margin-top: 200px;
+    }
+}
+
+.petunjuk {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.petunjuk h3 {
+    color: #376ba6;
+}
+
+.pgsbox{
+    float: left;
+    width: 33.333%;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+.pgs-current {
+    /*background-color: #458fcd;*/
+    background-color: #feef5e;
+}
+.pgs-finish {
+    /*background-color: #458fcd;*/
+    /*background-color: #ffca09;*/
+    background-color: #00BAF1;
+    color: #f0f0f0;
+}
+.pgs-text {
+    padding: 16px 16px;
+    font-size: 1em;
+}
+.pgs-text .title {
+    font-weight: bold;
+}
+.pgs-text .ket {
+    display:block;
+}
+.pgs-bar {
+    height: 6px;
+    background-color: inherit;
+}
+.pgs-current .pgs-bar {
+    background-color: #F1C40F;
+}
+.pgs-finish .pgs-bar {
+    background-color: #3498DB;
+}
+
+.form-horizontal p {
+    margin-top: 7px;
+}
+
+.required {
+    color: #e74c3c;
+    margin-left: 12px;
+}
+
+#rc-imageselect {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
+
+@media screen and (max-height: 575px) {
+    #rc-imageselect, .g-recaptcha {
+        transform:scale(0.77);
+        -webkit-transform:scale(0.77);
+        transform-origin:0 0;
+        -webkit-transform-origin:0 0;
+    }
+}
+
+/**************************** END OF REGISTRATION ********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************** NOT FOUND ********************************/
+
+
+.notfound-maskot {
+    margin-top: 50px;
+}
+
+.notfound-logo {
+    margin-top: 20px;
+}
+
+/**************************** END OF NOT FOUND ********************************/
+
+
+/*******************************CONTESTANT HOME *************************/
+.contestant {
+	min-height: 250px;
+   padding: 30px 0;
+   background-color: #f5f5f5;
+}
+.contestant p {
+	font-size: 1.1em;
+}
+
+.review-programming {
+	background-color: #CFD8DC;
+    padding: 20px;
+}
+
+/**********************END OF CONTESTANT HOME**********************************/
+
+/**********************************PAYMENT***********************************/
+.payment {
+	min-height: 250px;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+}
+
+.payment p {
+	font-size: 1.1em;
+}
+
+.konfirmasi-pembayaran {
+	background: url("../img/bg-cloud.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding: 20px;
+}
+
+/*******************************HAS NOT JOIN*****************************************/
+.hasnot {
+	padding-top: 30px;
+    padding-bottom: 30px;
+	background-color: #f5f5f5;
+}
+
+.hasnot h4 {
+text-align:center;
+
+}
+
+/************************END OF HAS NOT JOIN*****************************************/
+
+/**********************NOT AVAILABLE***********************************************/
+.not-available {
+	padding-top: 30px;
+    padding-bottom: 30px;
+	background-color: #f5f5f5;
+}
+
+.not-available h4 {
+	text-align:center;
+
+}
+
+/*****************END OF NOT AVAILABLE***********************************************/
+
+/*************************PROFIL TIM*********************************************/
+.profil {
+	padding-top: 60px;
+	padding-bottom:40px;
+	background-color: #f5f5f5;
+}
+
+.profil h3 {
+	text-align:center;
+}
+
+.contactbox {
+
+}
+
+.profil-guru {
+	background-color:#f5f5f5;
+	padding-bottom:40px;
+}
+
+/*******************************END OF PROFIL TIM************************************************/
+
+/*********************************EDIT PROFIL**************************************************/
+.edit-profile {
+padding-bottom:30px;
+}
+/*****************************END OF EDIT PROFIL**************************************************/
+
+/*************************CONTEST*******************************/
+
+.wrapper {
+
+}

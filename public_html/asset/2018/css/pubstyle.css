@@ -1,0 +1,463 @@
+/** public style**/
+html,body {
+    height: 100%;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    /*background-color: #2B3990;*/
+    background: url(../img/bg-cloud_stretch);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -270px;
+    padding: 0 0 270px;
+}
+.wrapper-md {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.btn-ilpc {
+    color: #FFFFFF;
+    background-color: #2B3990;
+    border-color: #2B3990;
+    border-radius: 1000px;
+    width: 100%;
+}
+
+.btn-ilpc:hover {
+	color: #FFFFFF;
+    background-color: #376ba6;
+    border-color: #376ba6;
+    border-radius: 1000px;
+    width: 100%;
+}
+.btn-ilpc:focus,
+.btn-ilpc:active,
+.btn-ilpc.active,
+.open .dropdown-toggle.btn-ilpc {
+    /*
+    color: #FFFFFF;
+    background-color: #2B3990;
+    border-color: #2B3990;*/
+}
+
+.btn-ilpc:active,
+.btn-ilpc.active,
+.open .dropdown-toggle.btn-ilpc {
+    background-image: none;
+}
+
+.btn-ilpc.disabled,
+.btn-ilpc[disabled],
+fieldset[disabled] .btn-ilpc,
+.btn-ilpc.disabled:hover,
+.btn-ilpc[disabled]:hover,
+fieldset[disabled] .btn-ilpc:hover,
+.btn-ilpc.disabled:focus,
+.btn-ilpc[disabled]:focus,
+fieldset[disabled] .btn-ilpc:focus,
+.btn-ilpc.disabled:active,
+.btn-ilpc[disabled]:active,
+fieldset[disabled] .btn-ilpc:active,
+.btn-ilpc.disabled.active,
+.btn-ilpc[disabled].active,
+fieldset[disabled] .btn-ilpc.active {
+    background-color: #376ba6;
+    border-color: #376ba6;
+}
+
+.btn-ilpc .badge {
+    color: #376ba6;
+    background-color: #FFFFFF;
+}
+
+#comingsoon{
+    background-image: url("../img/comingsoon-20182.png");
+    height: 212px;
+    width: 300px;
+    background-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+#soontext{
+    font-family: "Century Gothic", sans-serif; color: #FFFFFF; font-size: 90px;
+    text-align: center;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFF100;
+    font-weight: bold;
+}
+.bg-colour{
+    background: linear-gradient(#00BAF1, #B6E4FA);
+    background: -moz-linear-gradient(#00BAF1, #B6E4FA);
+    /*background-image: url("../pics/bgawan.png");*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.top-logo img {
+    max-width: 100%;
+    max-height: 100%;
+
+    background: #feef5e;
+    border: 4px solid #ffffff;
+    border-radius: 1000px;
+    padding: 8px 20px;
+}
+.top-ubaya {
+    height: 70px;
+}
+.top-newilpc {
+    text-align: center;
+}
+.top-newilpc img {
+    max-height: 150px;
+}
+.top-ilpc{
+    text-align: right;
+    width: 100%;
+    
+    background: #feef5e;
+    border: 4px solid #ffffff;
+    border-radius: 1000px;
+    padding: 8px 20px;
+}
+.top-ilpc img {
+    max-width: 130px;
+}
+
+.pgsbox{
+    float: left;
+    width: 33.333%;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+.pgs-current {
+    background-color: #90caf9;
+}
+.pgs-finish {
+    background-color: #ccdc38;
+}
+.pgs-text {
+    padding: 12px 12px;
+    font-size: 12px;
+    min-height: 75px;
+    /*border-right: 2px solid #bdbdbd;
+    border-left: 2px solid #bdbdbd;*/
+}
+.pgs-text .title {
+    font-weight: bold;
+}
+.pgs-text .ket {
+    display: block;
+}
+.pgs-bar {
+    height: 6px;
+    background-color: inherit;
+}
+.pgs-current .pgs-bar {
+    background-color: #3f51b5;
+}
+.pgs-finish .pgs-bar {
+    background-color: #c0c334;
+}
+
+.rgstr-box {
+    padding: 18px 12px 12px;
+    margin: 18px 0;
+    background-color: #f0f0f0;
+}
+
+.form-row {
+    margin-bottom: 16px;
+}
+.cust-control {
+    padding: 3px 6px;
+    border: 2px solid #DADADA;
+    width: 100%;
+}
+select.cbo-full{
+    width: 100%;
+}
+
+.rgstr-box #alamatSekolah {
+    padding: 3px 6px;
+}
+.rgstr-box p {
+    min-height: 20px;
+    margin-bottom: 3px;
+}
+
+.contactbox {
+    padding: 12px 18px;
+    background-color: #E0E0DD;
+    margin: 12px 0 18px 24px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 1px 2px rgba(0,0,0,0.25);
+}
+.contactbox legend {
+    background-color: inherit;
+}
+label {
+    width: 100%;
+    padding-top: 2px;
+}
+.required {
+    color: #ee0000;
+    padding: 2px;
+}
+.myft{
+    padding: 24px 24px 12px;
+    background-color: #FCC41B;
+    height: 240px;
+}
+.ft-logo {
+    text-align: center;
+    margin: 12px;
+}
+.logoubaya{
+    width: 75vw;
+}
+.bestuniv, .sni{
+    height: 80px;
+}
+
+.finish-icon{
+    color:#54ba1d;
+    padding: 0 6px;
+}
+.petunjuk p{
+    margin:0px;
+}
+.petunjuk h3{
+    margin-top:0px;
+}
+.petunjuk{
+    background-color: #fffedd;
+    margin-top:12px; //3vh;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    color:#870a7b;
+    padding: 16px;//4vh;
+}
+.pengisianData form{
+    background-color: #fffedd;
+    border-radius: 15px;
+    padding: 4px 16px 16px;//2vh;
+    margin-top:16px; //2vh;
+    margin-bottom: 16px;
+}
+.pesanSalah{
+    color:#ff7070;
+}
+.warn-box{
+    background-color: #ff8484;
+    padding: 16px; //2vh;
+    margin-top:12px;
+    border-radius:10px;
+}
+.success-box {
+    background-color:#c0c334 ;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 16px;
+}
+.warn-box p, .success-box p {
+    margin-bottom: 0;
+}
+.konfirm{
+    background-color: #fffedd;
+    color: #870a7b;
+    padding:2vh;
+    margin-top:2vh;
+    border-radius:15px;
+}
+.login {
+    padding-top: 48px;
+}
+.login h1{
+    margin-top: 4px;
+    font-weight:700;
+    font-size: 48px;
+    text-align:center;
+    color: #2B3990;
+}
+.login form{
+    background: #f5f5f5;
+    padding: 24px 12px 18px;
+    margin: 12px auto 36px;
+    box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.16), 0 0px 0px 1px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+.login-topheader{
+    text-align: center;
+}
+/* --Footer styles--*/
+.my-footer {
+    height: 270px;
+    background-color: #b16000;
+}
+.kaki{
+    padding: 24px 24px 12px;
+    margin:auto;
+    text-align: center;
+}
+
+.kaki .copyright{
+    text-align: center;
+    /*margin-top:5vh;
+    margin-bottom:5vh;*/
+    color:#ffd19b;
+}
+.copyright {
+    padding-top: 12px;
+    font-size: 12px;
+}
+.kaki img {
+    max-height: 80px;
+    max-width: 150px;
+}
+/*sponsor*/
+.iklan {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding: 0 12px;
+}
+.iklan h3{
+    margin-top: 6px;
+    font-weight:700;
+    font-size: 20px;
+    text-align:center;
+    color: #f02b7a;
+}
+.sponsorpic {
+    padding: 24px 0;
+    text-align: center;
+}
+.sponsorpic img{
+    width: 75%;
+}
+.mediapartner{
+    padding: 12px 0 0;
+}
+
+.lupaPass{
+    text-align: center;
+    margin-top: 16px;
+}
+.lupaPass a {
+    color: #EA2E7F;
+}
+.lupaPass a:hover{
+    color: #D11E65;
+}
+@media screen and (min-width: 300px) {
+    .sponsorpic img{
+        width: 50%;
+    }
+    #comingsoon{
+        height: 104px;
+        width : 259px;
+        background-size: 100% 100%;
+    }
+    #soontext{
+        font-size: 30px;
+        -webkit-text-stroke-width: 1px;
+    }
+    .kaki img {
+        max-height: 40px;
+        max-width: 75px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .sponsorpic img{
+        width: 50%;
+    }
+    #comingsoon{
+        height: 117px;
+        width : 291px;
+        background-size: 100% 100%;
+    }
+    #soontext{
+        font-size: 45px;
+        -webkit-text-stroke-width: 2px;
+    }
+}
+@media (min-width: 768px) {
+    #comingsoon{
+        background-image: url("../img/comingsoon-20182.png");
+        min-height: 156px;
+        height: 234px;
+        min-width: 388px;
+        width: 582px;
+        background-size: 100% 100%;
+    }
+    .kaki img {
+        max-height: 80px;
+        max-width: 150px;
+    }
+    #soontext{
+        font-size: 70px;
+        -webkit-text-stroke-width: 3px;
+    }
+    label.md-right {
+        text-align: right;
+    }
+    .pgs-text .ket {
+        display: inline;
+    }
+
+    #myModal .modal-dialog {
+        width: 700px;
+    }
+    .logoubaya {
+        width: 240px;
+    }
+    .top-logo {
+        text-align: center;
+        height: 110px;
+    }
+    .top-newilpc {
+        height: 210px;
+    }
+    .top-newilpc img {
+        max-height: 230px;
+    }
+    .ilpc-header{
+        margin: 12px auto;
+    }
+    .pgs-text {
+        padding: 12px 12px;
+        font-size: 14px;
+        min-height: auto;
+    }
+
+    .iklan h3 {
+        font-size: 32px;
+    }
+    .treq {
+        padding-top: 30px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .sponsorpic img{
+        width: 70%;
+    }
+}
+@media (min-width: 1170px){
+/*    #comingsoon{
+        //height: 724px;
+        width: 1024px;
+    }*/
+}
+@media screen and (min-width: 1200px) {
+
+}
+
